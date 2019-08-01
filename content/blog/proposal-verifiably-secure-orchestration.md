@@ -7,7 +7,7 @@ featured = "/2019-08/orchestration.png"
 featuredalt = ""
 featuredpath = ""
 linktitle = ""
-title = "Proposal - Verifiably Secure Orchestration"
+title = "Proposal: Verifiably Secure Orchestration"
 type = "post"
 
 +++
