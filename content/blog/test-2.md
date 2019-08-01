@@ -1,15 +1,14 @@
 +++
 author = "Daniil Pintjuk "
-categories = []
+categories = ["test"]
 date = "2019-07-31T22:00:00+00:00"
 description = "test"
-draft = true
-featured = "/img/P1020293.JPG"
+draft = false
+featured = "P1020293.JPG"
 featuredalt = "duck"
 featuredpath = ""
-linktitle = ""
+linktitle = "aoeu"
 title = "test 2"
-type = "markdown"
-
+type = "post"
 +++
 test
