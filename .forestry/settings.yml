@@ -22,7 +22,7 @@ sections:
   match: "**/*"
   new_doc_ext: md
 upload_dir: static/img
-public_path: ''
+public_path: static
 front_matter_path: "/:filename:"
 use_front_matter_path: false
 file_template: ":filename:"
