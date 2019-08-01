@@ -37,5 +37,5 @@ fields:
   hidden: true
   default: post
 pages:
-- content/blog/proposal-verifiably-secure-orchestration.md
 - content/blog/proposal-real-container-isolation-lets-port-docker-to-sel4.md
+- content/blog/proposal-verifiably-secure-orchestration.md
