@@ -3,7 +3,6 @@ author = "Daniil Pintjuk"
 categories = ["Cloud", "Formal Verification"]
 date = "2019-08-02T00:36:02+02:00"
 description = "Some sort of automated orchestration of is a must in a modern, large-scale software service  deployment.  Kubernets for example is a very popular option. Such Security and reliability are vital for an orchestration service, is a formaly verified orchestration service feasible? "
-draft = true
 featured = "/2019-08/orchestration.png"
 featuredalt = ""
 featuredpath = ""
