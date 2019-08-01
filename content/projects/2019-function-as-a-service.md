@@ -3,9 +3,9 @@ author = "Daniil Pintjuk"
 categories = ["golang", "cloud"]
 date = "2019-01-01"
 description = "So this docker thing seems to be getting some traction, and so does function as a service (FaaS). It would be nice if we could have our own FaaS infrastructure in place instead of paying Amazon for it. There are some alternatives out there e.g. OpenFaaS. But we have a bad case of “Not Invented Here” syndrome, so we built one ourselves."
-featured = "scetch.png"
+featured = "2019-16/faas/scetch.png"
 featuredalt = "scetch of system"
-featuredpath = "2019-06/faas/"
+featuredpath = ""
 linktitle = "FaaS - "
 title = "Function as a Service"
 type = "post"
@@ -16,18 +16,19 @@ single functions. The goal was to easily deploy and scale the app horizontally. 
 
 The core component is the FaaS Gateway that uses docker to dynamicaly descover function and rederect requests to them. The image above illustrates the idaa.
 
-
 ## Installing
+
 ### Requirements
-1) Docker
-2) Docker-compose
-3) Govendor
+
+1. Docker
+2. Docker-compose
+3. Govendor
 
 Install go.
 
 Install docker and docker compose.
 
-Install govendor: 
+Install govendor:
 
 ``` bash
 go get -u github.com/kardianos/govendor
@@ -39,7 +40,6 @@ Clone this repo:
 git clone https://github.com/kardianos/govendor.git
 ```
 
-
 ## Running FAAS
 
 ``` bash
@@ -48,6 +48,7 @@ docker-compuose up
 ```
 
 ## Creating a your function
+
 A function is a docker container runing a micro service implemented as a single simple golang function.
 
 Creating a function is easy using the faas/function library.
@@ -68,16 +69,14 @@ func main() {
 
 Just pas any regular golang function to RunFunc, and the library will spin up a web server running this function.
 
-
-to make it work with the FAAS gateway you need to run it in a docker container with with labels 
+to make it work with the FAAS gateway you need to run it in a docker container with with labels
 
 ``` 
 
 faas.name={name of your function}
 ```
 
-
-and 
+and
 
 ``` 
 faas.port={the port you used for its web server}
