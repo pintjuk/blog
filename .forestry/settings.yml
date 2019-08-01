@@ -23,7 +23,7 @@ sections:
   new_doc_ext: md
 upload_dir: static/img
 public_path: static/img
-front_matter_path: ":filename:"
+front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
 instant_preview: true
