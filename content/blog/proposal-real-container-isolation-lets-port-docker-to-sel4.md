@@ -20,7 +20,7 @@ type = "post"
 
 ## Normal docker:
 
-![](/docker model.jpg)
+![](img/docker model.jpg)
 
 # Design1:
 
