@@ -22,10 +22,10 @@ Normal docker:
 
 # ![](static/img/docker model.jpg)
 
-Stage 1 on seL4
+Design1:
 
 ![](/img/docker on sel4 stage 1.png)
 
-Stage 2 on seL4
+Design2:
 
 ![](/img/docker on sel4 stage 2.png)
