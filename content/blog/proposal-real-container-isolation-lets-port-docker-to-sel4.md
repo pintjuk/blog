@@ -18,14 +18,14 @@ type = "post"
 5. Proposed design 1 and 2
 6. Knows, unknows, learning milestones
 
-Normal docker:
+## Normal docker:
 
-# ![](static/img/docker model.jpg)
+![](/docker model.jpg)
 
-Design1:
+# Design1:
 
 ![](/img/docker on sel4 stage 1.png)
 
-Design2:
+## Design2:
 
 ![](/img/docker on sel4 stage 2.png)
