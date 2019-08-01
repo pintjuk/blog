@@ -2,13 +2,14 @@
 author = "Daniil Pintjuk"
 categories = ["golang", "cloud"]
 date = "2019-01-01"
-description = "So this docker thing, as well as function as a service, FaaS, seem to begetting some traction. It would be nice if we could have our own FaaS infrastructure in place instead of paying Amazon for it. There are some alternatives out there e.g. OpenFaaS. But we have a bad case of “Not Invented Here” syndrome, so we built one ourselves."
+description = "So this docker thing seems to be getting some traction, and so does function as a service (FaaS). It would be nice if we could have our own FaaS infrastructure in place instead of paying Amazon for it. There are some alternatives out there e.g. OpenFaaS. But we have a bad case of “Not Invented Here” syndrome, so we built one ourselves."
 featured = "scetch.png"
 featuredalt = "scetch of system"
 featuredpath = "2019-06/faas/"
 linktitle = "FaaS - "
 title = "Function as a Service"
 type = "post"
+
 +++
 This is a small GoLang infrastructure app that enables to easy deploy a simple server acting like
 single functions. The goal was to easily deploy and scale the app horizontally. To achive this we leveraged the scaling, service discovery that come for free in a docker compose and swarm environment.
@@ -82,5 +83,4 @@ and
 faas.port={the port you used for its web server}
 ```
 
-With this lables the FAAS gateway will detect your function container automatically and start forwarding function calls to it. 
-
+With this lables the FAAS gateway will detect your function container automatically and start forwarding function calls to it.
