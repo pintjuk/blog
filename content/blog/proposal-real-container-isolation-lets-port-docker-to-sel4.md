@@ -11,11 +11,11 @@ title = "Proposal: Real container isolation, lets port docker to seL4  "
 type = "post"
 
 +++
-1. about docker
-2. about sel4
-3. about need for verifiable isolation
-4. use case
-5. proposed design 1 and 2
+1. About docker
+2. About sel4
+3. About need for verifiable isolation
+4. Use case
+5. Proposed design 1 and 2
 6. Knows, unknows, learning milestones
 
 Normal docker:
