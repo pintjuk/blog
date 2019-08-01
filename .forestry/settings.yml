@@ -22,10 +22,10 @@ sections:
   match: "**/*"
   new_doc_ext: md
 upload_dir: static/img
-public_path: static/img
+public_path: ''
 front_matter_path: ''
 use_front_matter_path: true
-file_template: ":filename:"
+file_template: ":year:-:month:/:filename:"
 instant_preview: true
 build:
   preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
