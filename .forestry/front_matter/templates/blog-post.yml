@@ -36,3 +36,5 @@ fields:
   label: type
   hidden: true
   default: post
+pages:
+- content/blog/proposal-real-container-isolation-lets-port-docker-to-sel4.md
