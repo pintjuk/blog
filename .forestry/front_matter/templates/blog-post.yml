@@ -36,5 +36,3 @@ fields:
   label: type
   hidden: true
   default: post
-pages:
-- content/blog/test-2.md
