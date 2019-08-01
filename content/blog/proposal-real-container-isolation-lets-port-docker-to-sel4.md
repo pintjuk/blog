@@ -11,19 +11,16 @@ title = "Proposal: Real container isolation, lets port docker to seL4  "
 type = "post"
 
 +++
-# ![](/img/docker model.jpg)Introduktion
+1. about docker
+2. about sel4
+3. about need for verifiable isolation
+4. use case
+5. proposed design 1 and 2
+6. Knows, unknows, learning milestones
 
-about docker
+Normal docker:
 
-about sel4
-
-about need for verifiable isolation
-
-how to design system on docker
-
-Docker now:
-
-# 
+# ![](static/img/docker model.jpg)
 
 Stage 1 on seL4
 
