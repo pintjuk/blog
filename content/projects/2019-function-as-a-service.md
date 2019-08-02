@@ -53,9 +53,8 @@ With these labels, the FAAS gateway will detect your function container automati
 
 This is a docker file for the example function addition function above:
 
-FROM golang:1.9
-
 ```docker
+FROM golang:1.9
 # go stuff
 RUN go get -u github.com/kardianos/govendor && \
 go get -u -v github.com/codeskyblue/fswatch
