@@ -7,7 +7,7 @@ featured = "scetch.png"
 featuredalt = "scetch of system"
 featuredpath = "2019-06/faas/"
 linktitle = "FaaS - "
-title = "Function as a Service"
+title = "Function as a Service - A Go+Docker implimentation"
 type = "post"
 
 +++
