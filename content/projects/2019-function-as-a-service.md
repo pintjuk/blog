@@ -85,19 +85,6 @@ This is the folder structure for this example:
     │       └── additiond
     │           └── addition.go     <- function source 
     ├── docker-compose.yml          <- compose file
-    ├── function                    <- faas/function library
-    │   ├── function.go
-    │   └── function_test.go
-    ├── gateway                     <- Faas Gateway
-    │   ├── Dockerfile
-    │   ├── cmd
-    │   │   └── gatewayd
-    │   │       ├── bin
-    │   │       ├── gatewayd.go
-    │   │       └── vendor
-    │   │           └── vendor.json
-    │   └── vendor
-    │       └── vendor.json
 ```
 
 ## Installation
