@@ -42,12 +42,7 @@ Just pass any GoLang function to RunFunc, and the library will spin up a web ser
 To make it work with the FAAS-Gateway, you need to deploy it in a docker container with the following labels:
 
 ``` 
-faas.name={name of your function}
-```
-
-and
-
-``` 
+faas.name={name of your function} 
 faas.port={the port you used for its web server}
 ```
 
