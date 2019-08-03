@@ -80,15 +80,15 @@ This is the folder structure for this example:
 ```tree
     ├── README.md
     ├── addition					
-    │   ├── Dockerfile				<- docker file for fuction
+    │   ├── Dockerfile              <- docker file for fuction
     │   └── cmd
     │       └── additiond
-    │           └── addition.go		<- function source 
-    ├── docker-compose.yml			<- compose file
-    ├── function					<- faas/function library
+    │           └── addition.go     <- function source 
+    ├── docker-compose.yml          <- compose file
+    ├── function                    <- faas/function library
     │   ├── function.go
     │   └── function_test.go
-    ├── gateway						<- Faas Gateway
+    ├── gateway                     <- Faas Gateway
     │   ├── Dockerfile
     │   ├── cmd
     │   │   └── gatewayd
