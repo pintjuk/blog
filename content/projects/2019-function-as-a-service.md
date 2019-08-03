@@ -49,8 +49,8 @@ faas.port={the port you used for its web server}
 With these labels, the FAAS gateway will detect your function container automatically and start forwarding function calls to it as soon as your container is up.
 
 This is a docker file for the example function addition function above:
-**addition/Dockerfile:**
 
+**addition/Dockerfile:**
 ```Dockerfile
 FROM golang:1.9
 # install govender and fswatch
@@ -62,9 +62,9 @@ CMD govendor fetch +m ; go run cmd/*/*.go
 ```
 
 And this is its docker compose entry:
-**docker-compose.yml:**
 
-```docker-compose
+**docker-compose.yml:**
+```yaml
 addition:
         build:
             context: ./addition
