@@ -58,9 +58,7 @@ This is a docker file for the example function addition function above:
 ```docker
 FROM golang:1.9
 # install govender and fswatch
-RUN go get -u github.com/kardianos/govendor && \
-go get -u -v github.com/codeskyblue/fswatch
-# 
+RUN go get -u github.com/kardianos/govendor
 RUN mkdir -p /go/src/github.com/pintjuk/faas/addition
 WORKDIR /go/src/github.com/pintjuk/faas/addition
 EXPOSE 8080
