@@ -82,13 +82,13 @@ addition:
 
 ## Installation
 
-### Requirements
+###### Requirements
 
 1. Docker
 2. Docker-compose
 3. Govendor
 
-### Installation steps
+###### Installation steps
 
 1. Install GoLang.
 2. Install docker and docker-compose.
