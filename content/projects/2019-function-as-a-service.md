@@ -17,9 +17,11 @@ The core component is the FaaS Gateway. The image above illustrates the idea. Th
 
 ## Creating your function
 
-A function service is a docker container running a micro-service implemented as a single simple golang function.
+A function service is micro-service executing a single golang function.
 
-Creating a function service is straight forward using the faas/function library.
+Creating a function service is straight forward using the `faas/function` library.
+
+**/go/src/github.com/pintjuk/faas/addition/main.go:**
 
 ``` golang
 import (
@@ -55,9 +57,10 @@ This is a docker file for the example function addition function above:
 
 ```docker
 FROM golang:1.9
-# go stuff
+# install govender and fswatch
 RUN go get -u github.com/kardianos/govendor && \
 go get -u -v github.com/codeskyblue/fswatch
+# 
 RUN mkdir -p /go/src/github.com/pintjuk/faas/addition
 WORKDIR /go/src/github.com/pintjuk/faas/addition
 EXPOSE 8080
@@ -101,7 +104,7 @@ go get -u github.com/kardianos/govendor
 git clone https://github.com/kardianos/govendor.git
 ```
 
-## Running FAAS
+## Running FaaS
 
 1. up faas-gateway and function services
 
