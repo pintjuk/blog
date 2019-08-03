@@ -55,6 +55,7 @@ With these labels, the FAAS gateway will detect your function container automati
 
 This is a docker file for the example function addition function above:
 **addition/Dockerfile:**
+
 ```docker
 FROM golang:1.9
 # install govender and fswatch
@@ -67,6 +68,7 @@ CMD govendor fetch +m ; go run cmd/*/*.go
 
 And this is its docker compose entry:
 **docker-compose.yml:**
+
 ```docker-compose
 addition:
         build:
@@ -78,29 +80,29 @@ addition:
             - ./addition:/go/src/github.com/pintjuk/faas/addition
 ```
 
-The above stripts are executed in the following folder strucutre:
-```
-├── README.md
-├── addition // addition example function
-│   ├── Dockerfile
-│   └── cmd
-│       └── additiond
-│           └── addition.go
-├── docker-compose.yml 
-├── function // faas/function library
-│   ├── function.go
-│   └── function_test.go
-├── gateway // Faas Gateway
-│   ├── Dockerfile
-│   ├── cmd
-│   │   └── gatewayd
-│   │       ├── bin
-│   │       ├── gatewayd.go
-│   │       └── vendor
-│   │           └── vendor.json
-│   └── vendor
-│       └── vendor.json
-```
+This is the folder structure for this example:
+
+    ├── README.md
+    ├── addition // addition example function
+    │   ├── Dockerfile
+    │   └── cmd
+    │       └── additiond
+    │           └── addition.go
+    ├── docker-compose.yml 
+    ├── function // faas/function library
+    │   ├── function.go
+    │   └── function_test.go
+    ├── gateway // Faas Gateway
+    │   ├── Dockerfile
+    │   ├── cmd
+    │   │   └── gatewayd
+    │   │       ├── bin
+    │   │       ├── gatewayd.go
+    │   │       └── vendor
+    │   │           └── vendor.json
+    │   └── vendor
+    │       └── vendor.json
+
 ## Installation
 
 ###### Requirements
