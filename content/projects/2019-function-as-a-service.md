@@ -21,7 +21,7 @@ A function service is micro-service executing a single golang function.
 
 Creating a function service is straight forward using the `faas/function` library.
 
-**/go/src/github.com/pintjuk/faas/addition/main.go:**
+**/go/src/github.com/pintjuk/faas/addition/addition.go:**
 
 ``` golang
 import (
@@ -54,7 +54,7 @@ faas.port={the port you used for its web server}
 With these labels, the FAAS gateway will detect your function container automatically and start forwarding function calls to it as soon as your container is up.
 
 This is a docker file for the example function addition function above:
-
+**addition/Dockerfile:**
 ```docker
 FROM golang:1.9
 # install govender and fswatch
@@ -66,7 +66,7 @@ CMD govendor fetch +m ; go run cmd/*/*.go
 ```
 
 And this is its docker compose entry:
-
+**docker-compose.yml:**
 ```docker-compose
 addition:
         build:
@@ -78,6 +78,29 @@ addition:
             - ./addition:/go/src/github.com/pintjuk/faas/addition
 ```
 
+The above stripts are executed in the following folder strucutre:
+```
+├── README.md
+├── addition // addition example function
+│   ├── Dockerfile
+│   └── cmd
+│       └── additiond
+│           └── addition.go
+├── docker-compose.yml 
+├── function // faas/function library
+│   ├── function.go
+│   └── function_test.go
+├── gateway // Faas Gateway
+│   ├── Dockerfile
+│   ├── cmd
+│   │   └── gatewayd
+│   │       ├── bin
+│   │       ├── gatewayd.go
+│   │       └── vendor
+│   │           └── vendor.json
+│   └── vendor
+│       └── vendor.json
+```
 ## Installation
 
 ###### Requirements
