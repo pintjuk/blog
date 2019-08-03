@@ -76,7 +76,7 @@ addition:
 ```
 
 This is the folder structure for this example:
-
+```tree
     ├── README.md
     ├── addition					
     │   ├── Dockerfile              <- docker file for fuction
@@ -97,7 +97,7 @@ This is the folder structure for this example:
     │   │           └── vendor.json
     │   └── vendor
     │       └── vendor.json
-
+```
 ## Installation
 
 ###### Requirements
