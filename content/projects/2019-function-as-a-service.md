@@ -76,6 +76,7 @@ addition:
 ```
 
 This is the folder structure for this example:
+
 ```tree
     ├── README.md
     ├── addition					
@@ -83,11 +84,11 @@ This is the folder structure for this example:
     │   └── cmd
     │       └── additiond
     │           └── addition.go		<- function source 
-    ├── docker-compose.yml          <- compose file
+    ├── docker-compose.yml			<- compose file
     ├── function					<- faas/function library
     │   ├── function.go
     │   └── function_test.go
-    ├── gateway 					<- Faas Gateway
+    ├── gateway						<- Faas Gateway
     │   ├── Dockerfile
     │   ├── cmd
     │   │   └── gatewayd
@@ -98,6 +99,7 @@ This is the folder structure for this example:
     │   └── vendor
     │       └── vendor.json
 ```
+
 ## Installation
 
 ###### Requirements
