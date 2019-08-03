@@ -41,7 +41,7 @@ Just pass any GoLang function to RunFunc, and the library will spin up a web ser
 
 To make it work with the FAAS-Gateway, you need to deploy it in a docker container with the following labels:
 
-``` Docker-compose
+``` ymal
 faas.name={name of your function} 
 faas.port={the port you used for its web server}
 ```
@@ -51,7 +51,7 @@ With these labels, the FAAS gateway will detect your function container automati
 This is a docker file for the example function addition function above:
 **addition/Dockerfile:**
 
-```docker
+```Dockerfile
 FROM golang:1.9
 # install govender and fswatch
 RUN go get -u github.com/kardianos/govendor
